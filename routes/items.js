@@ -1,5 +1,5 @@
 import express  from "express";
-import {  item as itemmodel } from "../db-utils/itemmodel";
+import {  item as itemmodel } from "../db-utils/itemmodel.js";
 import { v4 } from "uuid";
 const itemRouter=express.Router();
 
