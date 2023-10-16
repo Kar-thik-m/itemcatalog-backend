@@ -3,7 +3,7 @@ import itemRouter from "../itemcatalog-backend/routes/items.js";
 import connectToDb from "./db-utils/mongoose.js";
 import cors from "cors";
 const app = express();
-const PORT =process.env.PORT || 1234;
+const PORT =process.env.PORT || 8888;
 
 await connectToDb();
 app.use(cors());
