@@ -1,7 +1,6 @@
 {
   "name": "itemcatalog-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -15,8 +14,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.6.0",
+    "mongoose": "^7.6.2",
     "nodemon": "^3.0.1",
     "uuid": "^9.0.1"
-  }
+  },
+  "description": ""
 }
