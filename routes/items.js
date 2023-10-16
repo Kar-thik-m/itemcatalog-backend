@@ -1,6 +1,6 @@
 import express  from "express";
 import {  item as itemmodel } from "../../itemcatalog-backend/db-utils/itemmodel.js";
-import { v4 } from "uuid";
+//import { v4 } from "uuid";
 const itemRouter=express.Router();
 
 
@@ -8,7 +8,7 @@ itemRouter.post("/create",async(req,res)=>{
    
    try{
     
-    const item=new itemmodel({...req.body,id:v4});
+    const item=new itemmodel(req.body);
     await item.save();
         res.send({msg:' created '});
     }catch(err){
