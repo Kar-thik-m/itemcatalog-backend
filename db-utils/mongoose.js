@@ -7,8 +7,8 @@ const password = process.env.DB_PASSWORD || '';
 const clusterName=process.env.DB_CLUSTER || '';
 const dbName=process.env.DB_NAME || '';
 
-const cloudMongoUrl=`mongodb+srv://${username}:${password}@${clusterName}/${dbName}?retryWrites=true&w=majority`;
 
+const cloudMongoUrl=`mongodb+srv://${username}:${password}@${clusterName}/${dbName}?retryWrites=true&w=majority`;
 const connectToDb = async () => {
     try {
         await mongoose.connect(cloudMongoUrl,

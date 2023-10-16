@@ -23,4 +23,4 @@ const itemSchema = new mongoose.Schema({
         require:true,
     }
 });
-export const item = mongoose.model('items ',itemSchema);
+export const item = mongoose.model('Item ',itemSchema);
