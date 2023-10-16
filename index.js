@@ -1,6 +1,6 @@
 import express  from "express"
-import itemRouter from "../itemcatalog-backend/routes/items.js";
-import connectToDb from "./db-utils/mongoose.js";
+import itemRouter from "../../itemcatalog-backend/routes/items.js";
+import connectToDb from "../../itemcatalog-backend/db-utils/mongoose.js";
 import cors from "cors";
 const app = express();
 const PORT =process.env.PORT || 8888;
